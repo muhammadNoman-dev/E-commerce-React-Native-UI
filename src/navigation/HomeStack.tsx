@@ -1,7 +1,8 @@
-import { createNativeStackNavigator, NativeStackNavigationOptions } from "@react-navigation/native-stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen } from "../screens/home";
-import { HomeStackScreens, stackStyle } from "@config/constants";
-
+import { HomeStackScreens } from "@config/constants";
+import { Text, View } from "@components/StyledComponents";
+import Icon from "../components/Icon";
 
 const HomeStack = () => {
 	const { Navigator, Screen } = createNativeStackNavigator();
@@ -16,11 +17,24 @@ const HomeStack = () => {
 		<Navigator
 			initialRouteName={HomeStackScreens.Home}
 			screenOptions={{
-				...(stackStyle as NativeStackNavigationOptions),
+				headerTitleAlign: "center",
 			}}
 		>
 			{Screens.map(({ name, component }, index) => (
-				<Screen key={index} name={name} component={component}  />
+				<Screen
+					key={index}
+					name={name}
+					component={component}
+					options={{
+						headerLeft: () => <Icon name="back" />,
+						headerRight: () => (
+							<View className="flex flex-row items-center justify-evenly ">
+								<Icon name="back" />
+								<Icon name="back" />
+							</View>
+						),
+					}}
+				/>
 			))}
 		</Navigator>
 	);

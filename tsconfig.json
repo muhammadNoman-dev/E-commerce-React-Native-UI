@@ -4,15 +4,14 @@
 	"compilerOptions": {
 		// "strict": true,
 		"skipLibCheck": true,
-		"baseUrl": "./src",
+		"baseUrl": ".",
 		"paths": {
-			"@components/*": ["components/*"],
-			"@config/*": ["config/*"],
-			"@hooks/*": ["hooks/*"],
-			"@pages/*": ["pages/*"],
-			"@services/*": ["services/*"],
-			"@store/*": ["store/*"],
-			"@types/*": ["types/*"],
+			"@components/*": ["src/components/*"],
+			"@config/*": ["src/config/*"],
+			"@pages/*": ["src/pages/*"],
+			"@types/*": ["src/types/*"],
+			"@assets/*": ["assets/*"],
+
 		}
 	}
 }
