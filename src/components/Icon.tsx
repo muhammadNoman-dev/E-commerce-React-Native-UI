@@ -32,6 +32,7 @@ export type IconName =
 	| "circleO"
 	| "inventory"
 	| "add"
+	| "shoppingcart"
 	| "clock";
 
 export interface IconProps {
@@ -58,6 +59,7 @@ const IconMap: { [key in IconName]: { component: any; icon: string; className?: 
 	loading: { component: MaterialCommunityIcons, icon: "loading" },
 	closecircle: { component: AntDesign, icon: "closecircle" },
 	checkcircle: { component: AntDesign, icon: "checkcircle" },
+	shoppingcart: { component: AntDesign, icon: "shoppingcart" },
 	show: { component: Feather, icon: "eye" },
 	hide: { component: Feather, icon: "eye-off" },
 	clock: { component: Feather, icon: "clock" },
