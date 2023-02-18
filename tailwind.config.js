@@ -28,6 +28,10 @@ module.exports = {
 				cancel: "#F67C7C",
 				"dark-alt": "#737373",
 				"sky-blue": "#00FFF0",
+				brown: "#f29333",
+				blue: "#54a3e8",
+				"light-gray": "#575454",
+				red: "#e66565",
 			},
 			spacing: {
 				0.125: "0.5px",

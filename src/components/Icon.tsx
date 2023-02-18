@@ -1,39 +1,15 @@
 import React from "react";
-import {
-	Entypo,
-	FontAwesome,
-	FontAwesome5,
-	EvilIcons,
-	AntDesign,
-	MaterialCommunityIcons,
-	Feather,
-	Ionicons,
-	MaterialIcons,
-} from "@expo/vector-icons";
+import { FontAwesome, AntDesign, Ionicons, MaterialIcons } from "@expo/vector-icons";
 
 export type IconName =
-	| "home"
-	| "calendar"
-	| "user"
-	| "spinner"
-	| "login"
-	| "location"
-	| "closecircle"
-	| "checkcircle"
-	| "show"
-	| "hide"
-	| "alert"
-	| "loading"
 	| "back"
-	| "logout"
-	| "camera"
 	| "circle"
-	| "qrScan"
 	| "circleO"
-	| "inventory"
 	| "add"
 	| "shoppingcart"
-	| "clock";
+	| "addCircle"
+	| "minusCircle"
+	| "favorite";
 
 export interface IconProps {
 	name?: IconName;
@@ -46,28 +22,14 @@ export interface IconProps {
 }
 
 const IconMap: { [key in IconName]: { component: any; icon: string; className?: string } } = {
-	home: { component: Entypo, icon: "home" },
-	location: { component: EvilIcons, icon: "location" },
-	calendar: { component: FontAwesome, icon: "calendar" },
 	circle: { component: FontAwesome, icon: "circle" },
 	circleO: { component: FontAwesome, icon: "circle-o" },
-	user: { component: FontAwesome5, icon: "user-alt" },
-	spinner: { component: EvilIcons, icon: "spinner-3" },
-	login: { component: MaterialCommunityIcons, icon: "login" },
-	logout: { component: MaterialCommunityIcons, icon: "logout" },
-	qrScan: { component: MaterialCommunityIcons, icon: "qrcode-scan" },
-	loading: { component: MaterialCommunityIcons, icon: "loading" },
-	closecircle: { component: AntDesign, icon: "closecircle" },
-	checkcircle: { component: AntDesign, icon: "checkcircle" },
 	shoppingcart: { component: AntDesign, icon: "shoppingcart" },
-	show: { component: Feather, icon: "eye" },
-	hide: { component: Feather, icon: "eye-off" },
-	clock: { component: Feather, icon: "clock" },
-	alert: { component: Ionicons, icon: "alert-circle-outline" },
+	addCircle: { component: AntDesign, icon: "pluscircleo" },
+	minusCircle: { component: AntDesign, icon: "minuscircleo" },
 	back: { component: Ionicons, icon: "chevron-back-outline" },
 	add: { component: Ionicons, icon: "add-circle" },
-	camera: { component: MaterialIcons, icon: "camera" },
-	inventory: { component: MaterialIcons, icon: "inventory" },
+	favorite: { component: MaterialIcons, icon: "favorite" },
 };
 
 const Icon: React.FC<IconProps> = ({
