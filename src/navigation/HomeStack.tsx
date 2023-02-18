@@ -29,8 +29,7 @@ const HomeStack = () => {
 						headerLeft: () => <Icon name="back" />,
 						headerRight: () => (
 							<View className="flex flex-row items-center justify-evenly ">
-								<Icon name="back" />
-								<Icon name="back" />
+								<Icon name="shoppingcart" />
 							</View>
 						),
 					}}
