@@ -1,0 +1,88 @@
+module.exports = {
+	plugins: [],
+	content: ["./src/**/*.{js,jsx,ts,tsx}"],
+	variants: {
+		scrollbar: ["rounded"],
+	},
+	theme: {
+		extend: {
+			fontSize: ({ theme }) => ({
+				xs: "10px",
+				sm: "12px",
+				md: "14px",
+				lg: "16px",
+				xl: "20px",
+				...theme("spacing"),
+			}),
+			colors: {
+				white: "#FFFFFF",
+				black: "#000000",
+				blur: "#b1b1b1",
+				background: "#F1F3F4",
+				"secondary-light": "#C9C9C9",
+				"secondary-dark": "#A7A7A7",
+				purple: "#7D7FF0",
+				danger: "#C61919",
+				dark: "#4D4D4D",
+				success: "#6ED44A",
+				cancel: "#F67C7C",
+				"dark-alt": "#737373",
+				"sky-blue": "#00FFF0",
+			},
+			spacing: {
+				0.125: "0.5px",
+				0.25: "1px",
+				0.375: "1.5px",
+				0.5: "2px",
+				0.75: "3px",
+				1.25: "5px",
+				2.5: "10px",
+				2.75: "11px",
+				3.25: "13px",
+				3.5: "14px",
+				5: "20px",
+				5.5: "22px",
+				7.5: "30px",
+				10.25: "41px",
+				15.25: "61px",
+				18.75: "75px",
+				23: "90px",
+				23.75: "95px",
+				35: "140px",
+				40.75: "163px",
+				45: "180px",
+				50: "200px",
+				84: "336px",
+				20.75: "83px",
+				"90p": "90%",
+			},
+			borderRadius: ({ theme }) => ({
+				...theme("spacing"),
+			}),
+			// boxShadow: {
+			// 	shadowCustom: "2px 4px 10px rgba(0, 0, 0, 0.25)",
+			// 	sm: "0px 4px 10px rgba(0, 0, 0, 0.25)",
+			// 	sidebar: "0 -10px 10px -10px black inset",
+			// 	tab: "0 -10px 10px -10px rgba(169,169,169,1) inset",
+			// },
+			borderWidth: ({ theme }) => ({
+				...theme("spacing"),
+			}),
+			height: ({ theme }) => ({
+				...theme("spacing"),
+			}),
+			maxWidth: ({ theme }) => ({
+				...theme("spacing"),
+			}),
+			minWidth: ({ theme }) => ({
+				...theme("spacing"),
+			}),
+			maxHeight: ({ theme }) => ({
+				...theme("spacing"),
+			}),
+			minHeight: ({ theme }) => ({
+				...theme("spacing"),
+			}),
+		},
+	},
+};
