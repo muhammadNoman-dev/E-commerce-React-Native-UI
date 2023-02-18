@@ -13,7 +13,7 @@ const Card: React.FC<Props> = ({ data }) => {
 	return (
 		<TouchableWithoutFeedback onPress={() => navigation.navigate("Product" as never, { data: data } as never)}>
 			<View className="w-fit flex flex-col">
-				<View className={`${data.color} flex p-3 items-center rounded-6 `}>
+				<View className={`${data.color} flex p-2 items-center rounded-6 `}>
 					<Image className="h-32 w-32" resizeMode={"contain"} source={data.image} />
 				</View>
 				<Text className="">{data.name}</Text>
