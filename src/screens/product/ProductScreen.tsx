@@ -74,7 +74,9 @@ const ProductScreen = () => {
 							<Icon name="addCircle" color="green" size={22} />
 						</TouchableOpacity>
 					</View>
-					<Icon name="favorite" color="red" size={22} />
+					<View className="bg-red flex items-center p-2 rounded-full justify-center ">
+						<Icon name="favorite" color="white" size={16} />
+					</View>
 				</View>
 				<AppButton className={`${route.params.data.color}`}>
 					<View className="flex flex-row ">
