@@ -1,6 +1,8 @@
 
 export enum HomeStackScreens {
 	"Home" = "Home",
+	"Product" = "Product",
+
 }
 
 
