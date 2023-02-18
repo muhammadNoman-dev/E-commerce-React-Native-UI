@@ -4,13 +4,13 @@
 	"compilerOptions": {
 		// "strict": true,
 		"skipLibCheck": true,
-		"baseUrl": ".",
+		"baseUrl": "./src",
 		"paths": {
-			"@components/*": ["src/components/*"],
-			"@config/*": ["src/config/*"],
-			"@pages/*": ["src/pages/*"],
-			"@types/*": ["src/types/*"],
-			"@assets/*": ["assets/*"],
+			"@components/*": ["components/*"],
+			"@config/*": ["config/*"],
+			"@pages/*": ["pages/*"],
+			"@types/*": ["types/*"],
+			// "@assets/*": ["assets/*"],
 
 		}
 	}
